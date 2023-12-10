@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--mobileNav-->
+    <div class="mobileNav">
+      <h2>Rental</h2>
+      <i id="navBtn" class="fa-solid fa-bars"></i>
+    </div>
+    <!--subscribeForm-->
     <div class="sub animate__animated animate__backInDown">
       <div class="SUBSCRIBE_CONTENT">
         <button class="closeSubcribe">X</button>
@@ -25,14 +31,19 @@
         offers.
       </p>
       <form class="subscribeForm">
-        <input type="email" name="email" placeholder="Enter-Email" /><br />
+        <input
+          class="subinput"
+          type="email"
+          name="email"
+          placeholder="Enter-Email"
+        /><br />
       </form>
       <button class="subscribeBnt">Subscribe</button>
     </div>
     <!--All the containers are here-->
     <div class="main_container">
       <!--The nav -->
-      <div class="nav_container">
+      <div class="nav_container animate__animated animate__fadeInLeftBig">
         <div class="price">
           <h3>Rental<br />From $99<br />per night</h3>
         </div>
@@ -40,12 +51,27 @@
         <div class="form">
           <form>
             <label class="form_date" for="checkIn">Check In</label><br />
-            <input required class="form_date" type="date" name="checkIn" /><br />
+            <input
+              required
+              class="form_date"
+              type="date"
+              name="checkIn"
+            /><br />
             <label class="form_date" for="checkOut">Check Out</label><br />
-            <input required class="form_date" type="date" name="checkOut" /><br />
+            <input
+              required
+              class="form_date"
+              type="date"
+              name="checkOut"
+            /><br />
             <label for="Adults"><i class="fa-solid fa-user"></i>Adults</label
             ><br />
-            <input required class="form_date" type="number" name="Adults" /><br />
+            <input
+              required
+              class="form_date"
+              type="number"
+              name="Adults"
+            /><br />
             <label class="form_date" for="Kids"
               ><i class="fa-solid fa-child"></i>Kids</label
             ><br />
@@ -63,8 +89,12 @@
           <p><i class="fa-solid fa-envelope"></i>Contact</p>
         </div>
       </div>
+
       <!--main container-->
+
       <div class="main">
+        
+        <!--main-->
         <h2>The Apartment</h2>
         <div class="photo_room animate__animated animate__fadeInRightBig">
           <p class="apartmentType">Living room</p>
@@ -162,9 +192,24 @@
           <div class="contact_info">
             <p>Email: mail@mail.com</p>
             <form class="contact">
-              <input required type="text" name="name" placeholder="Name" /><br />
-              <input required type="email" name="email" placeholder="Email" /><br />
-              <input required type="text" name="message" placeholder="Message" /><br />
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Name"
+              /><br />
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="Email"
+              /><br />
+              <input
+                required
+                type="text"
+                name="message"
+                placeholder="Message"
+              /><br />
               <button>Send a message</button>
             </form>
           </div>

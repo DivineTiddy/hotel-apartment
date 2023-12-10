@@ -1,4 +1,7 @@
 `use strict`;
+const main = document.querySelector(`.main`);
+const nav_container = document.querySelector(`.nav_container`);
+const navBtn = document.getElementById(`navBtn`);
 const closeSubcribe = document.querySelector(`.closeSubcribe`);
 const sub = document.querySelector(`.sub`);
 const subscribe = document.querySelector(`.subscribe`);
@@ -49,4 +52,12 @@ subscribe.addEventListener(`click`, function () {
 //close Subcrib
 closeSubcribe.addEventListener(`click`, function () {
   sub.classList.remove(`subscribeSection`);
+});
+//navBtn
+navBtn.addEventListener(`click`,function () {
+  nav_container.classList.toggle(`hidden_nav`);
+})
+// main
+main.addEventListener(`click`, function () {
+  nav_container.classList.remove(`hidden_nav`);
 })
