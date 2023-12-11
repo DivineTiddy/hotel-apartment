@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.mobileNav{
+.mobileNav {
   display: none;
 }
 /* All the containers are here */
@@ -239,10 +239,10 @@ form label i {
   background-image: url(bedroom.jpg);
 }
 /*subscribeSection*/
-.sub{
+.sub {
   display: none;
 }
-.subscribeSection{
+.subscribeSection {
   width: 50%;
   height: 50vh;
   display: flex;
@@ -255,21 +255,21 @@ form label i {
   background-color: white;
   margin: 60px 0px;
 }
-.SUBSCRIBE_CONTENT{
+.SUBSCRIBE_CONTENT {
   display: flex;
   align-items: center;
   justify-content: end;
   width: 100%;
 }
-.subscribeForm input{
+.subscribeForm input {
   width: 40vw;
   height: 5vh;
 }
-.subscribeForm{
+.subscribeForm {
   display: flex;
   flex-direction: column;
 }
-.subscribeBnt{
+.subscribeBnt {
   width: 10vw;
   padding: 5px 0px;
   background-color: #4caf50;
@@ -277,12 +277,12 @@ form label i {
   border: none;
   cursor: pointer;
 }
-.closeSubcribe{
+.closeSubcribe {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
 }
-@media screen and (max-width:998px){
+@media screen and (max-width: 998px) {
   .main_container {
     display: flex;
     height: inherit;
@@ -290,11 +290,26 @@ form label i {
     width: 96%;
     justify-content: flex-end;
   }
-  .nav_container{
+  .subscribeSection {
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  margin: 60px 0px;
+  top: 40px;
+  left: 5%;
+}
+  .nav_container {
     display: none;
   }
   .hidden_nav {
-    width: 50%;
+    width: 30%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -302,10 +317,10 @@ form label i {
     align-items: center;
     background-color: #f1f1f1;
     overflow: scroll;
-    z-index: 1;
+    z-index: 11;
     margin: 0px 15px;
     position: fixed;
-    right: 50%;
+    right: 70%;
     top: 0%;
   }
   .main {
@@ -313,8 +328,9 @@ form label i {
     display: flex;
     flex-direction: column;
     height: auto;
+    margin-top: 60px;
   }
-  .subscribeSection{
+  .subscribeSection {
     width: 90%;
     height: 50vh;
     display: flex;
@@ -327,14 +343,14 @@ form label i {
     background-color: white;
     margin: 60px 0px;
   }
-  .subscribeBnt{
+  .subscribeBnt {
     width: 100%;
   }
-  
-  .subinput{
+
+  .subinput {
     width: 100vw;
   }
-  .mobileNav{
+  .mobileNav {
     width: 100%;
     background-color: black;
     color: white;
@@ -342,16 +358,34 @@ form label i {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    position: relative;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
   }
-  .mobileNav i{
+  .mobileNav i {
     font-size: xx-large;
     font-weight: bolder;
   }
-  body{
+  body {
     display: flex;
     flex-direction: column;
     height: auto;
   }
- 
+}
+@media screen and (min-width: 500px){
+  .hidden_nav {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    overflow: scroll;
+    z-index: 11;
+    margin: 0px 15px;
+    position: fixed;
+    right: 50%;
+    top: 0%;
+  }
 }
